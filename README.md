@@ -37,6 +37,7 @@ Add the domain under **Settings → Pages → Custom domain**, configure the DNS
 ## Content and availability
 
 - Brand: **DreamScaler**. The folder/repository name remains `DreamScaleProduct` as requested.
+- Two modes: scale display configured in the application requires no MIDI; optional MIDI response reacts to incoming notes and velocity. Both use USB between the controller and a Windows or Linux computer running the Python application, plus external power for the strip. Standalone means independent of a DAW, not independent of a computer.
 - Availability: **Coming soon**. No checkout, preorder, unconnected signup form, price, or contact address is presented.
 - The existing video demonstrates LED visualization during Bitwig Studio playback only, not the standalone software workflow. It is embedded in a responsive, lazy-loaded YouTube privacy-enhanced player (`youtube-nocookie.com`). Main video buttons scroll to this player; a direct YouTube fallback link is also provided: https://www.youtube.com/watch?v=vPi2TyJrofc.
 - The product photograph is the supplied `IMG20260913161157.jpg`, copied to `assets/dreamscaler-kit.jpg`. The original is left locally and ignored by Git.
@@ -51,7 +52,7 @@ Add the domain under **Settings → Pages → Custom domain**, configure the DNS
 
 - `index.html`: page content and metadata.
 - `styles.css`: responsive layout, keyboard styling and reduced-motion support.
-- `app.js`: scale illustration and opt-in audio.
+- `app.js`: scale illustration and audio activated by playing a key.
 - `assets/`: product photography and favicon.
 - `.nojekyll`: publish static files without Jekyll.
 

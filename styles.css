@@ -1008,6 +1008,49 @@ h3 {
   padding-bottom:90px;
 }
 
+.modes-section {
+  border-bottom:1px solid var(--line);
+}
+
+.modes-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+}
+
+.mode-card {
+  padding:30px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:7px;
+}
+
+.mode-card .feature-number {
+  color:var(--green);
+  line-height:1.8;
+}
+
+.mode-card h3 {
+  font-size:23px;
+  margin:16px 0;
+}
+
+.mode-card p {
+  font-size:13px;
+  line-height:1.9;
+  color:var(--muted);
+  margin:12px 0 0;
+}
+
+@media(max-width:700px) {
+  .modes-grid {
+    grid-template-columns:1fr;
+  }
+  .mode-card {
+    padding:24px;
+  }
+}
+
 .video-frame {
   aspect-ratio:16/9;
   border:1px solid var(--line);
