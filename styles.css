@@ -960,6 +960,20 @@ h3 {
   font-size:18px;
 }
 
+.github-link {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  min-height:44px;
+  color:var(--muted);
+  font-size:12px;
+  white-space:nowrap;
+}
+
+.github-link:hover {
+  color:var(--green);
+}
+
 .footer .brand-icon {
   transform:scale(.8);
   transform-origin:left;
