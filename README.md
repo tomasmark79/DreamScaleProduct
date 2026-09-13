@@ -16,7 +16,7 @@ The current Python application supports Windows and Linux. macOS compatibility i
 
 ## Made to fit your instrument
 
-The **1-metre RGBW strip has 144 LEDs**, closely spaced for white and black keys. It can be attached to a suitable surface and shortened at marked cut points. Configurable LED-to-key alignment adapts it to different instruments; Arturia layouts are starting templates.
+The RGBW strip has a **maximum length of 1 metre**, with **144 LEDs per metre** closely spaced for white and black keys. Full-keyboard coverage depends on the width of your keys. It can be attached to a suitable surface and shortened at marked cut points. Configurable LED-to-key alignment adapts it to different instruments; Arturia layouts are starting templates.
 
 ## Coming soon
 
