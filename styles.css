@@ -803,6 +803,11 @@ h3 {
   height:auto;
 }
 
+.performance-photo {
+  margin-top:44px;
+  text-align:left;
+}
+
 .kit-photo figcaption {
   display:flex;
   justify-content:space-between;
