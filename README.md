@@ -1,29 +1,29 @@
 # DreamScaler
 
-An LED strip that displays musical scales on your piano or keyboard.
+**See your music in a new light.**
 
-[Explore DreamScaler](https://tomasmark79.github.io/DreamScaleProduct/) · [Watch the Bitwig demo](https://www.youtube.com/watch?v=vPi2TyJrofc)
+DreamScaler brings musical scales to your piano or keyboard through a strip of colored LEDs. Explore 60+ scales and see which notes belong together, right at your keys.
 
-![DreamScaler LED strip illuminated above the piano keys](assets/dreamscaler-in-action.png)
+[Discover DreamScaler](https://tomasmark79.github.io/DreamScaleProduct/)
 
-## Two ways to use it
+![DreamScaler lights above piano keys](assets/dreamscaler-in-action.png)
 
-**Scale display:** choose a root note and one of 60+ scales in the application. The corresponding keys light up in color. No MIDI connection is required.
+## The first release: scale display
 
-**MIDI response:** connect MIDI input from your keyboard or music software to make the lights follow played notes and their velocity.
+The companion application sends the selected scale to the strip over USB. **No MIDI connection or music production software is required.** It also works on acoustic pianos with space for the strip.
 
-Both modes use the DreamScaler Python application on **Windows or Linux**, a USB connection to the controller, and external power for the strip. Bitwig Studio integration is optional.
+The current Python application supports Windows and Linux. macOS compatibility is expected but not yet verified. A computer, USB connection and external power for the strip are required. The software is being revised; final setup details will follow.
 
-## Fits your instrument
+## Made to fit your instrument
 
-The **1-metre RGBW strip has 144 LEDs**, spaced closely enough to align with white and black keys. Attach it wherever your instrument has a suitable surface and enough room, and trim it at the marked cut points if needed.
+The **1-metre RGBW strip has 144 LEDs**, closely spaced for white and black keys. It can be attached to a suitable surface and shortened at marked cut points. Configurable LED-to-key alignment adapts it to different instruments; Arturia layouts are starting templates.
 
-LED positions are assigned to keys in a configuration file. The Arturia KeyLab configurations serve as templates for other layouts. Scale display also works on acoustic pianos; responding to played notes requires MIDI input.
+## Coming soon
 
-## Availability
+DreamScaler will be a paid product. Product options, pricing and availability will be announced before launch.
 
-**First kits coming soon.** Pricing and ordering details will be published on the website.
+A separate paid MIDI extension for Bitwig Studio is planned for a later stage. Ableton integration is being considered. These extensions are outside the first scale-display release.
 
-The video shows playback in Bitwig Studio. The standalone application is planned for a redesign and will be presented separately.
+[Watch the Bitwig prototype](https://www.youtube.com/watch?v=vPi2TyJrofc) — a demonstration of the later extension, not the standalone application.
 
 © Tomas Mark

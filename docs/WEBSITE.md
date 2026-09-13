@@ -30,7 +30,11 @@ Set the domain under **Settings → Pages**, configure DNS and enable HTTPS. Pul
 
 - Product photographs are in `assets/`. Original IMG files remain local and are ignored by Git. Update image paths and intrinsic dimensions when replacing photos.
 - The keyboard preview is independent presentation code. It connects to neither MIDI hardware nor the private application.
-- Fonts load from Google Fonts; the embedded video uses YouTube's privacy-enhanced domain. No first-party analytics or signup form is implemented.
+- Fonts load from Google Fonts. The Bitwig prototype has an external YouTube link only; no player is embedded. No first-party analytics or signup form is implemented.
 - Availability remains Coming soon until ordering details are confirmed.
 
 Original website copy, design and supplied photography: all rights reserved. This website repository does not inherit the application's MIT license.
+
+## Product scope
+
+The initial paid product presents scale display without MIDI. MIDI response belongs to a later, separate paid Bitwig extension; Ableton is a possible future integration. Do not describe a generic standalone MIDI mode. Pricing tiers are undecided. Keep software descriptions general while the application is revised; do not publish click-by-click setup instructions. macOS remains expected, not verified.

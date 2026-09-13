@@ -1009,6 +1009,31 @@ h3 {
   padding-bottom:90px;
 }
 
+.future-note {
+  border-top:1px solid var(--line);
+  padding-block:28px 38px;
+}
+
+.future-note .eyebrow {
+  margin-bottom:10px;
+}
+
+.future-note h3 {
+  font-size:22px;
+  margin:0 0 12px;
+}
+
+.future-note>p:not(.eyebrow) {
+  max-width:740px;
+  font-size:13px;
+  line-height:1.8;
+  color:var(--muted);
+}
+
+.future-note .text-link {
+  margin-top:5px;
+}
+
 .modes-section {
   border-bottom:1px solid var(--line);
 }
