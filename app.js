@@ -14,16 +14,33 @@ const rootSelect = document.querySelector('#root');
 const scaleSelect = document.querySelector('#scale');
 const keyboard = document.querySelector('#keyboard');
 const soundButton = document.querySelector('#sound-toggle');
-let soundEnabled = false;
+let soundEnabled = true;
 let audioContext;
 const releaseTimers = new WeakMap();
 
-function previewNote(key) {
+async function previewNote(key) {
   clearTimeout(releaseTimers.get(key));
   key.classList.add('active');
   releaseTimers.set(key, setTimeout(() => key.classList.remove('active'), 420));
-  if (!soundEnabled || !audioContext) return;
-  if (audioContext.state === 'suspended') void audioContext.resume().catch(disableSound);
+  if (!soundEnabled) return;
+  try {
+    // Create/resume audio inside the key's user gesture, never during page load.
+    if (!audioContext || audioContext.state === 'closed') {
+      const Audio = window.AudioContext || window.webkitAudioContext;
+      if (!Audio) throw new Error('Web Audio is unavailable');
+      audioContext = new Audio();
+    }
+    if (audioContext.state !== 'running') await audioContext.resume();
+    // The visitor may mute the preview while the browser is resuming audio.
+    if (!soundEnabled) return;
+    if (audioContext.state !== 'running') throw new Error('Audio could not resume');
+    playTone(key);
+  } catch {
+    disableSound();
+  }
+}
+
+function playTone(key) {
   const oscillator = audioContext.createOscillator();
   const gain = audioContext.createGain();
   const now = audioContext.currentTime;
@@ -78,18 +95,10 @@ function disableSound() {
   soundButton.textContent = '♪ Sound unavailable';
 }
 
-soundButton.addEventListener('click', async () => {
-  try {
-    if (!audioContext) {
-      const Audio = window.AudioContext || window.webkitAudioContext;
-      if (!Audio) { disableSound(); return; }
-      audioContext = new Audio();
-    }
-    if (audioContext.state === 'suspended') await audioContext.resume();
-    soundEnabled = !soundEnabled;
-    soundButton.setAttribute('aria-pressed', String(soundEnabled));
-    soundButton.textContent = soundEnabled ? '♪ Sound on' : '♪ Sound off';
-  } catch { disableSound(); }
+soundButton.addEventListener('click', () => {
+  soundEnabled = !soundEnabled;
+  soundButton.setAttribute('aria-pressed', String(soundEnabled));
+  soundButton.textContent = soundEnabled ? '♪ Sound on' : '♪ Sound off';
 });
 
 rootSelect.addEventListener('change', updateScale);
