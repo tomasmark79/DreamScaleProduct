@@ -1,4 +1,4 @@
-# Original photography stays local; publish the selected copy in site/assets/.
+# Original photography stays local; publish the selected copy in assets/.
 /IMG*.jpg
 /.preview/
 __pycache__/
