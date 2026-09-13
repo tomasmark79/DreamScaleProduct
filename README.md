@@ -1,59 +1,29 @@
-# DreamScaler product website
+# DreamScaler
 
-An independent, English-language product presentation for DreamScaler. The website repository is separate from the private application repository. It contains original presentation code and a product photograph; no application source, firmware, or application Git history is copied here.
+An LED strip that displays musical scales on your piano or keyboard.
 
-## Local preview
+[Explore DreamScaler](https://tomasmark79.github.io/DreamScaleProduct/) · [Watch the Bitwig demo](https://www.youtube.com/watch?v=vPi2TyJrofc)
 
-From this directory:
+![DreamScaler LED strip illuminated above the piano keys](assets/dreamscaler-in-action.png)
 
-```powershell
-python -m http.server 4173 --bind 127.0.0.1
-```
+## Two ways to use it
 
-Open http://127.0.0.1:4173. No build step or package installation is needed.
+**Scale display:** choose a root note and one of 60+ scales in the application. The corresponding keys light up in color. No MIDI connection is required.
 
-## Publish with GitHub Pages
+**MIDI response:** connect MIDI input from your keyboard or music software to make the lights follow played notes and their velocity.
 
-The public repository is `https://github.com/tomasmark79/DreamScaleProduct`.
+Both modes use the DreamScaler Python application on **Windows or Linux**, a USB connection to the controller, and external power for the strip. Bitwig Studio integration is optional.
 
-1. In **Settings → Pages → Build and deployment**, select **Deploy from a branch**, branch **main**, folder **/ (root)**. This is the configured publishing method; no custom Actions workflow is needed.
-2. Commit changes and push from this directory:
+## Fits your instrument
 
-   ```powershell
-   git push -u origin main
-   ```
+The **1-metre RGBW strip has 144 LEDs**, spaced closely enough to align with white and black keys. Attach it wherever your instrument has a suitable surface and enough room, and trim it at the marked cut points if needed.
 
-3. GitHub's **pages build and deployment** workflow publishes the updated website automatically.
-4. The public address is `https://tomasmark79.github.io/DreamScaleProduct/`.
+LED positions are assigned to keys in a configuration file. The Arturia KeyLab configurations serve as templates for other layouts. Scale display also works on acoustic pianos; responding to played notes requires MIDI input.
 
-The website files live at the repository root. `.nojekyll` disables Jekyll processing. Only commit files intended to be public: branch-based Pages publishes the repository's static content, including the README. The original photograph is ignored by Git; the selected published copy is under `assets/`. Relative asset URLs also work at a custom domain root.
+## Availability
 
-See [GitHub Pages publishing sources](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+**First kits coming soon.** Pricing and ordering details will be published on the website.
 
-## Custom domain later
+The video shows playback in Bitwig Studio. The standalone application is planned for a redesign and will be presented separately.
 
-Add the domain under **Settings → Pages → Custom domain**, configure the DNS records using GitHub's current instructions, and enable HTTPS when available. GitHub will commit a root `CNAME` file for branch-based publishing; pull that commit before further local changes. Set canonical and absolute social sharing image URLs after the final domain is known.
-
-## Content and availability
-
-- Brand: **DreamScaler**. The folder/repository name remains `DreamScaleProduct` as requested.
-- Two modes: scale display configured in the application requires no MIDI; optional MIDI response reacts to incoming notes and velocity. Both use USB between the controller and a Windows or Linux computer running the Python application, plus external power for the strip. Standalone means independent of a DAW, not independent of a computer.
-- Availability: **Coming soon**. No checkout, preorder, unconnected signup form, price, or contact address is presented.
-- The existing video demonstrates LED visualization during Bitwig Studio playback only, not the standalone software workflow. It is embedded in a responsive, lazy-loaded YouTube privacy-enhanced player (`youtube-nocookie.com`). Main video buttons scroll to this player; a direct YouTube fallback link is also provided: https://www.youtube.com/watch?v=vPi2TyJrofc.
-- The product photograph is the supplied `IMG20260913161157.jpg`, copied to `assets/dreamscaler-kit.jpg`. The original is left locally and ignored by Git.
-- The illuminated keyboard photograph is the owner's cropped version of `IMG20260318195511.jpg`, saved as `assets/dreamscaler-in-action.png` (2109 × 404) and featured below the opening headline and buttons. Both original photographs remain local and ignored by Git.
-- The interactive piano is an independent browser illustration, with five example scales and synthesized audio enabled by default. Audio initializes only when a visitor clicks or taps a piano key (or activates a focused key using the keyboard), and waits for the browser audio context to resume. The Sound button mutes or re-enables subsequent notes. It does not connect to MIDI hardware or expose the private software.
-- The strip can be mounted wherever the instrument has a suitable surface and enough room, shortened at marked cut points, and calibrated through LED-to-key assignments in a configuration file. Arturia mappings are starting templates for other layouts. MIDI-responsive lighting requires MIDI input; mounting on an acoustic piano does not add note detection.
-- The standalone application is planned for redesign. Neither the embedded Bitwig playback video nor the interactive browser illustration is presented as a demonstration of its final interface or workflow.
-- Confirm final contents, supported operating systems, setup instructions, compatibility, pricing and availability before replacing Coming soon with an order link.
-- Fonts are loaded from Google Fonts, with system fallbacks. No first-party analytics, tracking pixels, or personal-data collection form is implemented. The embedded player uses YouTube's privacy-enhanced domain; Google Fonts, YouTube and GitHub hosting receive resource requests. Review privacy information appropriate to your eventual business setup before taking orders.
-
-## Files
-
-- `index.html`: page content and metadata.
-- `styles.css`: responsive layout, keyboard styling and reduced-motion support.
-- `app.js`: scale illustration and audio activated by playing a key.
-- `assets/`: product photography and favicon.
-- `.nojekyll`: publish static files without Jekyll.
-
-All rights reserved for the original website copy, design, and supplied photography. This repository does not adopt the private application's MIT license.
+© Tomas Mark
