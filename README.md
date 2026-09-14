@@ -27,6 +27,8 @@ Both bundles include the LED strip, USB controller, power supply and standalone 
 
 Ableton integration is being considered for the future.
 
+![DreamScaler extension controls in Bitwig Studio](btwg-extension.png)
+
 [Watch the Bitwig prototype](https://www.youtube.com/watch?v=vPi2TyJrofc) — a demonstration of the Bitwig extension, not the standalone application.
 
 © Tomas Mark
