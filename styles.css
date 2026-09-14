@@ -922,6 +922,28 @@ h3 {
   background:#141b12;
 }
 
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin: 36px auto;
+  max-width: 920px;
+  text-align: left;
+}
+.pricing-card {
+  padding: clamp(20px, 4vw, 36px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  background: rgba(11, 13, 12, 0.7);
+}
+.pricing-card h3 { font-size: 23px; line-height: 1.35; margin: 16px 0; }
+.pricing-card .price { font-size: 48px; font-weight: 700; margin: 20px 0; }
+.pricing-card ul { padding-left: 20px; line-height: 1.7; }
+.pricing-card li + li { margin-top: 10px; }
+.pricing-requirement { font-size: 14px; line-height: 1.5; }
+@media (max-width: 700px) {
+  .pricing-grid { grid-template-columns: 1fr; }
+}
 .availability-glow {
   position:absolute;
   inset:0;

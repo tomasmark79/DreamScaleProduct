@@ -31,10 +31,10 @@ Set the domain under **Settings → Pages**, configure DNS and enable HTTPS. Pul
 - Product photographs are in `assets/`. Original IMG files remain local and are ignored by Git. Update image paths and intrinsic dimensions when replacing photos.
 - The keyboard preview is independent presentation code. It connects to neither MIDI hardware nor the private application.
 - Fonts load from Google Fonts. The Bitwig prototype has an external YouTube link only; no player is embedded. No first-party analytics or signup form is implemented.
-- Availability remains Coming soon until ordering details are confirmed.
+- Bundles cost 169 EUR (kit + standalone) and 269 EUR (kit + standalone + Bitwig MIDI feedback). Purchase buttons link to https://www.paypal.com/paypalme/TomasMark/169EUR and https://www.paypal.com/paypalme/TomasMark/269EUR. Payment and order handling use PayPal; the site has no automatic fulfillment integration.
 
 Original website copy, design and supplied photography: all rights reserved. This website repository does not inherit the application's MIT license.
 
 ## Product scope
 
-The initial paid product presents scale display without MIDI. MIDI response belongs to a later, separate paid Bitwig extension; Ableton is a possible future integration. Do not describe a generic standalone MIDI mode. Pricing tiers are undecided. Keep software descriptions general while the application is revised; do not publish click-by-click setup instructions. macOS remains expected, not verified.
+Both bundles include standalone scale display without MIDI. The 269 EUR bundle adds the Bitwig extension for MIDI feedback. Ableton is a possible future integration. Do not describe a generic standalone MIDI mode. Keep software descriptions general while the application is revised; do not publish click-by-click setup instructions. macOS remains expected, not verified.
