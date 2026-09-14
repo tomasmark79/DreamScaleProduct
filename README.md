@@ -25,6 +25,12 @@ The RGBW strip has a **maximum length of 1 metre**, with **144 LEDs per metre** 
 
 Both bundles include the LED strip, USB controller, power supply and standalone software. Standalone scale display requires no MIDI or DAW. The Bitwig extension adds MIDI feedback and requires Bitwig Studio.
 
+## Shipping and ordering
+
+Shipping from Czechia via Zasilkovna / Packeta is offered to Czechia, Slovakia, Hungary and Romania. Shipping is additional to the kit price and quoted individually before payment.
+
+Email [dreamscaler@digitalspace.name](mailto:dreamscaler@digitalspace.name) with your chosen bundle, destination country, postcode and preferred pickup point or delivery address. We confirm delivery options, shipping cost and expected dispatch time by email. After you accept the quote, we send a PayPal link for the total. A quote request is non-binding.
+
 Ableton integration is being considered for the future.
 
 ![DreamScaler extension controls in Bitwig Studio](btwg-extension.png)

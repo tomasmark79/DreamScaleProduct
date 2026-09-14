@@ -31,7 +31,9 @@ Set the domain under **Settings → Pages**, configure DNS and enable HTTPS. Pul
 - Product photographs are in `assets/`. Original IMG files remain local and are ignored by Git. Update image paths and intrinsic dimensions when replacing photos.
 - The keyboard preview is independent presentation code. It connects to neither MIDI hardware nor the private application.
 - Fonts load from Google Fonts. The Bitwig prototype has an external YouTube link only; no player is embedded. No first-party analytics or signup form is implemented.
-- Bundles cost 169 EUR (kit + standalone) and 269 EUR (kit + standalone + Bitwig MIDI feedback). Purchase buttons link to https://www.paypal.com/paypalme/TomasMark/169EUR and https://www.paypal.com/paypalme/TomasMark/269EUR. Payment and order handling use PayPal; the site has no automatic fulfillment integration.
+- Bundles cost 169 EUR (kit + standalone) and 269 EUR (kit + standalone + Bitwig MIDI feedback), excluding shipping. Buttons prepare an email inquiry to dreamscaler@digitalspace.name rather than taking immediate payment. The customer reviews and sends the message; the website does not submit or store it.
+- Shipping from Czechia is offered only to Czechia, Slovakia, Hungary and Romania via Zasilkovna / Packeta. Confirm the delivery service, full price and expected dispatch time manually. After the customer accepts, send a PayPal.Me link using the agreed total in EUR to the TomasMark profile. Verify receipt in PayPal before dispatch. There is no automatic payment confirmation or fulfillment integration.
+- Country scope was checked against https://www.zasilkovna.cz/mobilni-aplikace on 2026-09-14. Recheck supported destinations before expanding the list.
 
 Original website copy, design and supplied photography: all rights reserved. This website repository does not inherit the application's MIT license.
 
